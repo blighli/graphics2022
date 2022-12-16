@@ -146,7 +146,9 @@
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\environment\includes\learnopengl\cube.h" />
     <ClInclude Include="..\..\environment\includes\learnopengl\shader_s.h" />
+    <ClInclude Include="..\..\environment\includes\learnopengl\sphere.h" />
     <ClInclude Include="..\environment\includes\learnopengl\camera.h" />
     <ClInclude Include="..\environment\includes\stb_image.h" />
   </ItemGroup>
