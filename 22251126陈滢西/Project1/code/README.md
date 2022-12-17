@@ -34,7 +34,25 @@ glColor3f(0.2f, 0.5f, 0.6f);
 		}glLoadIdentity();
 ```
 
- * 颜色渐变以保证水倒下的渐变效果
+ ## 颜色渐变以保证茶壶水柱的渐变效果
+茶壶倒下水柱的颜色与当前帧的序号有关
+```cs
+for (int i = 0; i < 20; i++)
+		{
+			if (i % 6 == 0)
+			{
+				glColor3f(1 - 0.03 * i, 1 - 0.02 * i, 1 - 0.01 * i);
+			}
+			else { glColor3f(1.0, 1.0, 1.0); }
+			//glTranslated(0.0001, 0, 0);
+			glBegin(GL_LINES);
+			glVertex3d(0.0, 0, 1.9);
+			glVertex3d(0.0,0, 0);
+			glEnd();
+			glutSwapBuffers();
+
+		}
+```
  * 茶壶
  *	* 光照
  *	 * 材质
