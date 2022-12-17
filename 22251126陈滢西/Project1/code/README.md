@@ -98,7 +98,7 @@ PlaySound(LPWSTR(IDR_WAVE1), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC | S
  ```
  ## glut+vs环境搭建
 
-* 下载glut的dll,lib，.h文件
+* 下载glut的dll,lib,.h文件
 * 将压缩包内的glut.h放到...\Microsoft Visual Studio\VC98\Include\GL目录下
 * 将glut32.lib放到...\Microsoft Visual Studio\VC98\Lib目录下
 * 将glut32.dll放到X:\windows\systom32目录下（win98用户放到X:\windows\systom目录下）
