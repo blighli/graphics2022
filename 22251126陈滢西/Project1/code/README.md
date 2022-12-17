@@ -86,16 +86,22 @@ void material(void)
  按键触发后，对gluLookAt函数的前六个参数进行更改。具体见代码中的**orientMe**，**move_Front_Back**，**move_Left_Right**，**move_High_Low**函数。
  
  ## bgm播放
- 
+
+* 将音频文件转化为wab格式，并放入vs解决方案目录
+* 导入复制文件ID
+* 使用以下代码完成
+ ```cs
+#include<windows.h>
+#include<mmsystem.h>
+#pragma comment(lib,"winmm.lib")
+PlaySound(LPWSTR(IDR_WAVE1), GetModuleHandle(NULL), SND_RESOURCE | SND_ASYNC | SND_LOOP);
+ ```
  ## glut+vs环境搭建
 
-
-
-善用分割线
-黑体强调
-放gif
-放可爱的表情
-放bilibili链接
+* 下载glut的dll,lib，.h文件
+* 将压缩包内的glut.h放到...\Microsoft Visual Studio\VC98\Include\GL目录下
+* 将glut32.lib放到...\Microsoft Visual Studio\VC98\Lib目录下
+* 将glut32.dll放到X:\windows\systom32目录下（win98用户放到X:\windows\systom目录下）
 
 ---
 # 茶壶倒茶动画效果 ❤️：
