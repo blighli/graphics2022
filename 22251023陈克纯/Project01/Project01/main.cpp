@@ -4,71 +4,96 @@
 
 using namespace std;
 
-void framebuffer_size_callback(GLFWwindow* window, int width, int height);
-void processInput(GLFWwindow *window);
-
-// 设置窗口宽和高
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
-
-int main()
+GLfloat roate = 0.0;// set rote of roate ying yu bu hao  bu zhuang le 设置旋转速率
+GLfloat rote = 0.0;//shezhi旋转角度
+GLfloat anglex = 0.0;//X 轴旋转
+GLfloat angley = 0.0;//Y 轴旋转
+GLfloat anglez = 0.0;//Z 轴旋转
+GLint WinW = 400;
+GLint WinH = 400;
+GLfloat oldx;//当左键按下时记录鼠标坐标  
+GLfloat oldy;
+void init(void)
 {
-	// glfw初始化及配置
-	glfwInit();
-	// 设置主次版本号及核心模式（只使用openGl的子集）
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
-	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
-	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
-	// 创建窗口
-	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
-	if (window == NULL)
+	glClearColor(1.0, 1.0, 1.0, 1.0); //背景黑色  
+}
+void display(void)
+{
+	glClear(GL_COLOR_BUFFER_BIT);
+	glColor3f(1.0, 0.0, 0.0); //画笔红色
+	glLoadIdentity();  //加载单位矩阵  
+	gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+	glRotatef(rote, 0.0f, 1.0f, 0.0f);
+	glRotatef(anglex, 1.0, 0.0, 0.0);
+	glRotatef(angley, 0.0, 1.0, 0.0);
+	glRotatef(anglez, 0.0, 0.0, 1.0);
+	glutWireTeapot(2);
+	rote += roate;
+	//glRotatef(angle, 0.0, 1.0, 0.0);
+	//angle += 1.0f;
+	glutSwapBuffers();
+}
+void reshape(int w, int h)
+{
+	glViewport(0, 0, (GLsizei)w, (GLsizei)h);
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	gluPerspective(60.0, (GLfloat)w / (GLfloat)h, 1.0, 20.0);
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
+	gluLookAt(0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+}
+void mouse(int button, int state, int x, int y)
+{
+	if (button == GLUT_LEFT_BUTTON)
 	{
-		std::cout << "Failed to create GLFW window" << std::endl;
-		glfwTerminate();
-		return -1;
+		if (state == GLUT_DOWN)
+		{
+			roate = 0;
+			rote = 0;
+			oldx = x;//当左键按下时记录鼠标坐标  
+			oldy = y;
+			cout << "left" << endl;
+		}
+
 	}
-	// 绑定上下文环境
-	glfwMakeContextCurrent(window);
-	// 当窗口大小变化时，调用回调函数
-	glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-
-	// 循环渲染（窗口不会被关闭）
-	while (!glfwWindowShouldClose(window))
+	if (button == GLUT_RIGHT_BUTTON)
 	{
-		// 处理输入
-		processInput(window);
+		if (state == GLUT_DOWN)
+		{
+			roate += 1.0f;
+			cout << "right" << endl;
+		}
 
-		// 使用自定义的颜色清空屏幕
-		glClearColor(0.3f, 0.3f, 0.8f, 1.0f);
-		// 清空颜色缓冲位
-		glClear(GL_COLOR_BUFFER_BIT);
-
-		// 交换颜色缓冲
-		glfwSwapBuffers(window);
-		// 检查是否有触发事件
-		glfwPollEvents();
 	}
 
-	// glfwTerminate用于释放之前分配的GLFW资源
-	glfwTerminate();
+}
+void motion(int x, int y)
+{
+	GLint deltax = oldx - x;
+	GLint deltay = oldy - y;
+	anglex += 360 * (GLfloat)deltax / (GLfloat)WinW;//根据屏幕上鼠标滑动的距离来设置旋转的角度  
+	angley += 360 * (GLfloat)deltay / (GLfloat)WinH;
+	anglez += 360 * (GLfloat)deltay / (GLfloat)WinH;
+	oldx = x;//记录此时的鼠标坐标，更新鼠标坐标  
+	oldy = y;//若是没有这两句语句，滑动是旋转会变得不可控  
+	glutPostRedisplay();
+	glutPostRedisplay();
+}
+int main(int argc, char** argv)
+{
+	glutInit(&argc, argv);
+	glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB);
+	glutInitWindowSize(600, 600);
+	glutInitWindowPosition(100, 100);
+	glutCreateWindow(argv[0]);
+	init();
+	glutDisplayFunc(display);
+	glutReshapeFunc(reshape);
+	glutMouseFunc(mouse);
+	glutMotionFunc(motion);
+	glutIdleFunc(display);
+	glutMainLoop();
 	return 0;
 }
-
-// 处理所有输入
-void processInput(GLFWwindow *window)
-{
-	if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
-		glfwSetWindowShouldClose(window, true);
-}
-
-
-// 当窗口大小改变时的回调函数
-void framebuffer_size_callback(GLFWwindow* window, int width, int height)
-{
-	// 控制视口，前两个参数为窗口左小角位置，后两个参数是窗口的宽度和高度
-	glViewport(0, 0, width, height);
-}
-
 
