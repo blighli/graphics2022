@@ -38,3 +38,5 @@
 *.js
 *.hpp
 *.inl
+*.tlog
+*.log

@@ -18,5 +18,28 @@
     <ClCompile Include="main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="dynamic.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="model.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="skyboxes.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="dynamic.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="model.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="skyboxes.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>
