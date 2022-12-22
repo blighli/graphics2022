@@ -1,0 +1,48 @@
+﻿生成启动时间为 2022/12/22 16:03:41。
+日志记录详细程度设置为: Normal。     1>项目“F:\3D\homework\homework2\homework2\homework2.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“x64\Debug\homework2.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt main.cpp
+         main.cpp
+     1>F:\3D\homework\homework2\homework2\main.cpp(108,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(134,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(154,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(175,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(268,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(269,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(272,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(273,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(274,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(275,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+     1>F:\3D\homework\homework2\homework2\main.cpp(280,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3D\homework\homework2\homework2\x64\Debug\homework2.exe" /INCREMENTAL /ILK:"x64\Debug\homework2.ilk" /NOLOGO glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3D\homework\homework2\homework2\x64\Debug\homework2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3D\homework\homework2\homework2\x64\Debug\homework2.lib" /MACHINE:X64 x64\Debug\glad.obj
+         x64\Debug\main.obj
+         homework2.vcxproj -> F:\3D\homework\homework2\homework2\x64\Debug\homework2.exe
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\homework2.tlog\unsuccessfulbuild”。
+         正在对“x64\Debug\homework2.tlog\homework2.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\3D\homework\homework2\homework2\homework2.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+
+       “F:\3D\homework\homework2\homework2\homework2.vcxproj”(Build 目标) (1) ->
+       (ClCompile 目标) -> 
+         F:\3D\homework\homework2\homework2\main.cpp(108,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(134,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(154,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(175,72): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(268,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(269,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(272,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(273,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(274,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(275,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+         F:\3D\homework\homework2\homework2\main.cpp(280,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+
+    11 个警告
+    0 个错误
+
+已用时间 00:00:06.02

@@ -1,0 +1,65 @@
+﻿生成启动时间为 2022/12/19 16:10:15。
+日志记录详细程度设置为: Normal。     1>项目“F:\3D\homework\homework2\homework2\homework2.vcxproj”在节点 2 上(Build 个目标)。
+     1>PrepareForBuild:
+         正在创建目录“Debug\homework2.tlog\”。
+       InitializeBuildStatus:
+         正在创建“Debug\homework2.tlog\unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TC /analyze- /FC /errorReport:prompt glad.c
+         glad.c
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc142.pdb" /external:W3 /Gd /TP /analyze- /FC /errorReport:prompt "太阳系.cpp"
+         太阳系.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x86\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3D\homework\homework2\homework2\Debug\homework2.exe" /INCREMENTAL /ILK:"Debug\homework2.ilk" /NOLOGO glfw3.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3D\homework\homework2\homework2\Debug\homework2.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3D\homework\homework2\homework2\Debug\homework2.lib" /MACHINE:X86 Debug\glad.obj
+         "Debug\太阳系.obj"
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwInit，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowShouldClose，函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetFramebufferSizeCallback，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPosCallback，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetTime，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，函数 _main 中引用了该符号
+     1>太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetProcAddress，函数 _main 中引用了该符号
+     1>F:\3D\homework\homework2\homework2\outside\lib\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+     1>F:\3D\homework\homework2\homework2\Debug\homework2.exe : fatal error LNK1120: 16 个无法解析的外部命令
+     1>已完成生成项目“F:\3D\homework\homework2\homework2\homework2.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+       “F:\3D\homework\homework2\homework2\homework2.vcxproj”(Build 目标) (1) ->
+       (Link 目标) -> 
+         F:\3D\homework\homework2\homework2\outside\lib\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+
+
+       “F:\3D\homework\homework2\homework2\homework2.vcxproj”(Build 目标) (1) ->
+       (Link 目标) -> 
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwInit，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowShouldClose，函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetFramebufferSizeCallback，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPosCallback，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetTime，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，函数 _main 中引用了该符号
+         太阳系.obj : error LNK2019: 无法解析的外部符号 _glfwGetProcAddress，函数 _main 中引用了该符号
+         F:\3D\homework\homework2\homework2\Debug\homework2.exe : fatal error LNK1120: 16 个无法解析的外部命令
+
+    1 个警告
+    17 个错误
+
+已用时间 00:00:02.44
