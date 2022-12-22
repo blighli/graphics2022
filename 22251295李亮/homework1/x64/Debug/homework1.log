@@ -1,0 +1,22 @@
+﻿生成启动时间为 2022/12/8 17:12:02。
+日志记录详细程度设置为: Normal。     1>项目“F:\3D\homework\homework1\homework1.vcxproj”在节点 2 上(Build 个目标)。
+     1>InitializeBuildStatus:
+         正在对“x64\Debug\homework1.tlog\unsuccessfulbuild”执行 Touch 任务。
+       ClCompile:
+         所有输出均为最新。
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\CL.exe /c /ZI /JMC /nologo /W3 /WX- /diagnostics:column /sdl /Od /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /permissive- /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc142.pdb" /external:W3 /Gd /TP /FC /errorReport:prompt box.cpp
+         box.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64\link.exe /ERRORREPORT:PROMPT /OUT:"F:\3D\homework\homework1\x64\Debug\homework1.exe" /INCREMENTAL /ILK:"x64\Debug\homework1.ilk" /NOLOGO opengl32.lib glfw3.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"F:\3D\homework\homework1\x64\Debug\homework1.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"F:\3D\homework\homework1\x64\Debug\homework1.lib" /MACHINE:X64 x64\Debug\glad.obj
+         x64\Debug\box.obj
+         homework1.vcxproj -> F:\3D\homework\homework1\x64\Debug\homework1.exe
+       FinalizeBuildStatus:
+         正在删除文件“x64\Debug\homework1.tlog\unsuccessfulbuild”。
+         正在对“x64\Debug\homework1.tlog\homework1.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“F:\3D\homework\homework1\homework1.vcxproj”(Build 个目标)的操作。
+
+已成功生成。
+    0 个警告
+    0 个错误
+
+已用时间 00:00:01.79
