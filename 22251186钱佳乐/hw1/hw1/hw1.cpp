@@ -4,12 +4,13 @@
 #include <glm/gtc/matrix_transform.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <iostream>
+#include <vector>
 
 #define STB_IMAGE_IMPLEMENTATION
 #include <stb_image.h>
 
 #include "camera.h"
-#include "Shader.h"
+#include "shader.h"
 
 
 void framebuffer_size_callback(GLFWwindow* window, int width, int height);
@@ -74,9 +75,9 @@ int main()
 	if (init() == -1) { return -1; }
 
 	//构建和编译着色器
-	Shader ourShader("shader/shader.vs", "shader/shader.fs");
-	Shader lightShader("shader/light.vs", "shader/light.fs");
-	Shader skyboxShader("shader/skybox.vs", "shader/skybox.fs");
+	Shader ourShader("shader/shader.vert", "shader/shader.frag");
+	Shader lightShader("shader/light.vert", "shader/light.frag");
+	Shader skyboxShader("shader/skybox.vert", "shader/skybox.frag");
 
 	// set up vertex data (and buffer(s)) and configure vertex attributes
 	float vertices[] = {
