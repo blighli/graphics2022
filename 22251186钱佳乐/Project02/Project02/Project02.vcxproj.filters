@@ -13,10 +13,47 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="shader">
+      <UniqueIdentifier>{7500c60a-531e-452d-9b21-33f21e020cb0}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Project02.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="glad.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="shader.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="render.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\cubemap.vert">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\equirectangular_to_cubemap.frag">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\skybox.frag">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\skybox.vert">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\shader.frag">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\shader.vert">
+      <Filter>shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
