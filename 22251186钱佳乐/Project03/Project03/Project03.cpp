@@ -28,12 +28,12 @@ bool   firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+//控制模型视角所需变量
 bool switchV = true;
 bool leftMouseButton = false, rightMouseButton = false;
-
 float xRotate = 0.0f, yRotate = 0.0f;
 float xTranslate = 0.0f, yTranslate = 0.0f;
-glm::vec3 weiyi;
+glm::vec3 translation;
 
 void         framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void         mouse_callback(GLFWwindow *window, double xpos, double ypos);
@@ -231,7 +231,7 @@ int main()
 		pbrShader.use();
 		pbrShader.setVec3("camPos", camera.Position);
 		glm::mat4 model = glm::mat4(1.0f);
-		model = glm::translate(model, weiyi);
+		model = glm::translate(model, translation);
 		model = glm::scale(model, glm::vec3(0.01f));
 		model = glm::rotate(model, glm::radians(yRotate), glm::vec3(1, 0, 0));
 		model = glm::rotate(model, glm::radians(xRotate), glm::vec3(0, 0, 1));
@@ -329,16 +329,16 @@ void mouse_callback(GLFWwindow *window, double xposIn, double yposIn)
 	if (!rightMouseButton && !leftMouseButton && switchV)
 		camera.ProcessMouseMovement(xoffset, yoffset);
 
-	if (rightMouseButton)
+	if (rightMouseButton && !switchV)
 	{
 		xRotate += xoffset;
 		yRotate += yoffset;
 	}
-	if (leftMouseButton)
+	if (leftMouseButton && !switchV)
 	{
 		xTranslate += xoffset*0.01;
 		yTranslate += yoffset*0.01;
-		weiyi = camera.Up*yTranslate + camera.Right*xTranslate;
+		translation = camera.Up*yTranslate + camera.Right*xTranslate;
 	}
 }
 
