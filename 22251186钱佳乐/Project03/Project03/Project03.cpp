@@ -28,8 +28,17 @@ bool   firstMouse = true;
 float deltaTime = 0.0f;
 float lastFrame = 0.0f;
 
+bool switchV = true;
+bool leftMouseButton = false, rightMouseButton = false;
+
+float xRotate = 0.0f, yRotate = 0.0f;
+float xTranslate = 0.0f, yTranslate = 0.0f;
+glm::vec3 weiyi;
+
 void         framebuffer_size_callback(GLFWwindow *window, int width, int height);
 void         mouse_callback(GLFWwindow *window, double xpos, double ypos);
+void key_callback(GLFWwindow* window, int key, int scancode, int action, int mods);
+void mouseButton_callback(GLFWwindow* window, int button, int action, int mods);
 void         scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void         processInput(GLFWwindow *window);
 unsigned int loadTexture(const char *path);
@@ -59,6 +68,9 @@ int init()
 	glfwSetScrollCallback(window, scroll_callback);
 	//设置输入模式，捕获鼠标
 	glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+	glfwSetKeyCallback(window, key_callback);
+	glfwSetMouseButtonCallback(window, mouseButton_callback);
+	
 
 	//GLAD是用来管理OpenGL的函数指针的，所以在调用任何OpenGL的函数之前我们需要初始化GLAD
 	// ------------------------------------------------------------------
@@ -219,9 +231,10 @@ int main()
 		pbrShader.use();
 		pbrShader.setVec3("camPos", camera.Position);
 		glm::mat4 model = glm::mat4(1.0f);
-		//model           = glm::translate(model, glm::vec3(0, .15, 0));
+		model = glm::translate(model, weiyi);
 		model = glm::scale(model, glm::vec3(0.01f));
-		//model           = glm::rotate(model, glm::radians(90.0f), glm::vec3(1, 0, 0));
+		model = glm::rotate(model, glm::radians(yRotate), glm::vec3(1, 0, 0));
+		model = glm::rotate(model, glm::radians(xRotate), glm::vec3(0, 0, 1));
 		pbrShader.setMat4("model", model);
 		glm::mat4 view = camera.GetViewMatrix();
 		pbrShader.setMat4("view", view);
@@ -312,7 +325,52 @@ void mouse_callback(GLFWwindow *window, double xposIn, double yposIn)
 	float yoffset = lastY - ypos;
 	lastX = xpos;
 	lastY = ypos;
-	camera.ProcessMouseMovement(xoffset, yoffset);
+
+	if (!rightMouseButton && !leftMouseButton && switchV)
+		camera.ProcessMouseMovement(xoffset, yoffset);
+
+	if (rightMouseButton)
+	{
+		xRotate += xoffset;
+		yRotate += yoffset;
+	}
+	if (leftMouseButton)
+	{
+		xTranslate += xoffset*0.01;
+		yTranslate += yoffset*0.01;
+		weiyi = camera.Up*yTranslate + camera.Right*xTranslate;
+	}
+}
+
+void key_callback(GLFWwindow * window, int key, int scancode, int action, int mods)
+{
+	if (key == GLFW_KEY_V && action == GLFW_PRESS) {
+		if (switchV) {
+			switchV = false;
+			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_NORMAL);
+		}
+		else {
+			switchV = true;
+			glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
+		}
+	}
+	
+}
+
+void mouseButton_callback(GLFWwindow * window, int button, int action, int mods)
+{
+	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_PRESS) {
+		leftMouseButton = true;
+	}
+	if (button == GLFW_MOUSE_BUTTON_LEFT && action == GLFW_RELEASE) {
+		leftMouseButton = false;
+	}
+	if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_PRESS) {
+		rightMouseButton = true;
+	}
+	if (button == GLFW_MOUSE_BUTTON_RIGHT && action == GLFW_RELEASE) {
+		rightMouseButton = false;
+	}
 }
 
 void scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
