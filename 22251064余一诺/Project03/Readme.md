@@ -3,8 +3,8 @@
 * GLFW 3.3  
 * GLAD  
 * GLM 0.9.8  
+* ASSIMP 5.2.5
 
 ## 演示视频  
 
-<www.baidu.com>
-
+<https://www.bilibili.com/video/BV1E8411J7VA>  
