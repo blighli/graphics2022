@@ -202,7 +202,7 @@ void init()
     lightShader = shaderLoader.BuildFromFile("Shader/lightingSurface.vert", "Shader/lightingSurface.frag");
     glCheckError();
 
-    testScene = modelLoader.LoadFromFile("Suzanne.obj", ModelLoadingPrefab::Default, glm::mat4(1.0f), true);
+    testScene = modelLoader.LoadFromFile("Suzanne.objmodel", ModelLoadingPrefab::Default, glm::mat4(1.0f), true);
     testScene.GenVAO();
 
     auto boundingSphere = testScene.data.get()->meshes[0].boundingSphere;
