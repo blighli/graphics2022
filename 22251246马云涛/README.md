@@ -6,6 +6,6 @@
 下面是运行结果展示。
 
 
-![HW1](/result/HW1.png)
-![HW2](/result/HW2.png)
-![HW3](/result/HW3.png)
+![HW1](./result/HW1.png)
+![HW2](./result/HW2.png)
+![HW3](./result/HW3.png)
