@@ -13,7 +13,8 @@ https://www.bilibili.com/video/BV15K411i78i/)❤️
 # 解决方案
 
  ## 光照，太阳为光源
- 
+ ![image](https://user-images.githubusercontent.com/44937001/209655350-f651d690-7ea4-4701-ba63-4bcaaccd902c.png)
+
  * 以x,y平面对一条正弦函数进行绘制
  * 正弦函数随着时间进行位移，以实现动态水波的效果
  * 以y轴正方向为旋转轴，向四面八方绘制水波正弦函数
