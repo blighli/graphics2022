@@ -13,27 +13,20 @@ https://www.bilibili.com/video/BV15K411i78i/)❤️
 # 解决方案
 
  ## 光照，太阳为光源
- ![image](https://user-images.githubusercontent.com/44937001/209655350-f651d690-7ea4-4701-ba63-4bcaaccd902c.png)
-
- * 以x,y平面对一条正弦函数进行绘制
- * 正弦函数随着时间进行位移，以实现动态水波的效果
- * 以y轴正方向为旋转轴，向四面八方绘制水波正弦函数
+ 
+由于实现了作业的可选部分**自己使用顶点着色器和片段着色器来实现光照效果**，因此这里以太阳为光源的实现逻辑如下
+* 将光源的位置设置成太阳的位置。
+* 设置环境反射系数
+* 设置漫反射系数
+具体实现即如下代码。
  
 ```cs
-glColor3f(0.2f, 0.5f, 0.6f);
-		for (int i = 0; i <= 200; i++)
-		{
-
-			glRotatef(2, 0, 1, 0);
-			glBegin(GL_LINES);
-			for (_x = -1.0f / factor; _x < 1.0f / factor; _x += 0.01f) {
-				glVertex3f(_x * factor, sin(_x + _fin) * factor, 0);
-
-			}
-			glEnd();
-			glFlush();
-
-		}glLoadIdentity();
+GLint lightPosLoc = glGetUniformLocation(renderingProgram, "light.position");
+	glUniform3f(lightPosLoc, 0.0f, 0.0f, 0.0f);
+	GLint lightAmbLoc = glGetUniformLocation(renderingProgram, "light.ambient");
+	glUniform3f(lightAmbLoc, 0.1f, 0.1f, 0.1f);
+	GLint lightDiffuseLoc = glGetUniformLocation(renderingProgram, "light.diffuse");
+	glUniform3f(lightDiffuseLoc, 0.7f, 0.7f, 0.7f);
 ```
 
  ## 纹理，使用图片进行纹理映射
@@ -56,7 +49,7 @@ for (int i = 0; i < 20; i++)
 		}
 ```
  ## 使用顶点着色器和片段着色器，自己实现光照效果
- 
+  ![image](https://user-images.githubusercontent.com/44937001/209655350-f651d690-7ea4-4701-ba63-4bcaaccd902c.png)
  * 设置光照与材质
 ```cs
 void material(void)
