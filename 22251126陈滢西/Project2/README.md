@@ -49,22 +49,83 @@ for (int i = 0; i < 20; i++)
 		}
 ```
  ## 使用顶点着色器和片段着色器，自己实现光照效果
+ 
+ 光照效果的实现使用的是Phong的反射模型，在Phong的反射模型中包含三个反射部分：环境反射、漫反射、镜面反射。
+ 
   ![image](https://user-images.githubusercontent.com/44937001/209655350-f651d690-7ea4-4701-ba63-4bcaaccd902c.png)
- * 设置光照与材质
+  
+  因为本次作业内容为天体的光照，所以不考虑镜面反射，只实现环境光与漫反射。
+  
+ 着色器代码如下：
+ 
+ **顶点着色器**
+ 
 ```cs
-void material(void)
+#version 430
+
+layout (location = 0) in vec3 position;
+layout (location = 1) in vec2 tex_coord;
+layout (location = 2 ) in vec3 normal;
+out vec2 tc;
+out vec3 normalIn;
+out vec3 fragPosIn;
+uniform mat4 mv_matrix;
+uniform mat4 proj_matrix;
+uniform mat4 model;             //模型矩阵
+
+layout (binding=0) uniform sampler2D s;
+
+void main(void)
+{	gl_Position = proj_matrix * mv_matrix * vec4(position,1.0);
+	tc = tex_coord;
+    fragPosIn = vec3(model * vec4(position, 1.0f));
+    normalIn = mat3(transpose(inverse(model))) * normal;
+
+}
+
+```
+
+**片元着色器**
+
+```cs
+#version 430
+
+in vec2 tc;
+in vec3 fragPosIn;
+in vec3 normalIn;
+out vec4 color;
+struct Material
 {
-	glEnable(GL_COLOR_MATERIAL);
-	GLfloat mat_specular[] = { 1.0, 0.0, 0.0, 1.0 };      //材质镜面反射颜色参数
-	GLfloat mat_shininess[] = { 50.0 };                   // 镜面反射指数参数
-	GLfloat mat_diffuse[] = { 0.0,0.0,1.0,1.0 };           //材质散射颜色	 
-	GLfloat white_light[] = { 1.0, 0.0,0.0, 1.0 };
-	GLfloat lmodel_ambient[] = { 0.2f, 0.5f, 0.6f };       //颜色为蓝色     
-	glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);   //材质镜面反射颜色
-	glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess); //镜面反射指数
-	glMaterialfv(GL_FRONT, GL_DIFFUSE, mat_diffuse);  //材质的散射颜色
-	glMaterialfv(GL_FRONT, GL_AMBIENT, white_light);     //材质的环境颜色 
-	glLightModelfv(GL_LIGHT_MODEL_AMBIENT, lmodel_ambient);  //  整个场景的环境光的RGBA强度
+    sampler2D diffuse;      
+};
+
+struct Light
+{
+    vec3 position;
+    vec3 ambient;
+    vec3 diffuse;
+    vec3 specular;
+};
+
+uniform Material material;
+uniform Light light;
+
+uniform mat4 mv_matrix;
+uniform mat4 proj_matrix;
+layout (binding=0) uniform sampler2D s;
+
+void main(void)
+{	
+    //环境光
+    vec3 ambient=light.ambient * vec3(texture(material.diffuse, tc));
+    //漫反射光
+    vec3 norm = normalize(normalIn);
+    vec3 lightDir = normalize(light.position - fragPosIn);
+    float diff = max(dot(norm, lightDir), 0.0f);
+    vec3 diffuse = light.diffuse * (diff * vec3(texture(material.diffuse, tc)));
+    color = vec4(diffuse+ambient,1.0f);
+}
+
 ```
  * 计算与调整各种位置参数以保证效果
  
