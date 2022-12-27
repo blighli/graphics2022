@@ -7,7 +7,7 @@
  *  * 鼠标选择，点击不同球体显示不同名称✔️
  
 点击查看发布在bilibili上的[程序视频](
-https://www.bilibili.com/video/BV1gA411R78D/?vd_source=881f21b11ef8e2832f37c7c84736a66c)❤️
+https://www.bilibili.com/video/BV15K411i78i/)❤️
 
 ---
 # 解决方案
