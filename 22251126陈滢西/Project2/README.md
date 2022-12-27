@@ -1,3 +1,5 @@
+球体生成
+https://blog.csdn.net/aoxuestudy/article/details/122423637?spm=1001.2101.3001.6650.9&utm_medium=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-122423637-blog-85012774.pc_relevant_3mothn_strategy_recovery&depth_1-utm_source=distribute.pc_relevant.none-task-blog-2%7Edefault%7EBlogCommendFromBaidu%7ERate-10-122423637-blog-85012774.pc_relevant_3mothn_strategy_recovery&utm_relevant_index=18
 # 最终实现内容如下
  *  **必选特性：✔️**
  * *  光照，太阳为光源✔️
