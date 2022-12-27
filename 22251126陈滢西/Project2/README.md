@@ -22,11 +22,11 @@ https://www.bilibili.com/video/BV15K411i78i/)❤️
  
 ```cs
 GLint lightPosLoc = glGetUniformLocation(renderingProgram, "light.position");
-	glUniform3f(lightPosLoc, 0.0f, 0.0f, 0.0f);
-	GLint lightAmbLoc = glGetUniformLocation(renderingProgram, "light.ambient");
-	glUniform3f(lightAmbLoc, 0.1f, 0.1f, 0.1f);
-	GLint lightDiffuseLoc = glGetUniformLocation(renderingProgram, "light.diffuse");
-	glUniform3f(lightDiffuseLoc, 0.7f, 0.7f, 0.7f);
+glUniform3f(lightPosLoc, 0.0f, 0.0f, 0.0f);
+GLint lightAmbLoc = glGetUniformLocation(renderingProgram, "light.ambient");
+glUniform3f(lightAmbLoc, 0.1f, 0.1f, 0.1f);
+GLint lightDiffuseLoc = glGetUniformLocation(renderingProgram, "light.diffuse");
+glUniform3f(lightDiffuseLoc, 0.7f, 0.7f, 0.7f);
 ```
 
  ## 纹理，使用图片进行纹理映射
