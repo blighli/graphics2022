@@ -1,0 +1,59 @@
+﻿  main.cpp
+  Sphere.cpp
+  Utils.cpp
+  正在生成代码...
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glBindTexture，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+Utils.obj : error LNK2001: 无法解析的外部符号 __imp_glBindTexture
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glClear，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glClearColor，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glDrawArrays，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glEnable，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glFrontFace，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glViewport，函数 "void __cdecl window_size_callback(struct GLFWwindow *,int,int)" (?window_size_callback@@YAXPEAUGLFWwindow@@HH@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp_glewInit，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwInit，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwTerminate，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwWindowHint，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwCreateWindow，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwDestroyWindow，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwWindowShouldClose，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwGetFramebufferSize，函数 "void __cdecl init(struct GLFWwindow *)" (?init@@YAXPEAUGLFWwindow@@@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwSetWindowSizeCallback，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwPollEvents，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwGetTime，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwMakeContextCurrent，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwSwapBuffers，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 glfwSwapInterval，函数 main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewActiveTexture，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewBindBuffer，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewBufferData，函数 "void __cdecl setupVertices(void)" (?setupVertices@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewGenBuffers，函数 "void __cdecl setupVertices(void)" (?setupVertices@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewEnableVertexAttribArray，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetUniformLocation，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUniformMatrix4fv，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewUseProgram，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewVertexAttribPointer，函数 "void __cdecl display(struct GLFWwindow *,double)" (?display@@YAXPEAUGLFWwindow@@N@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewBindVertexArray，函数 "void __cdecl setupVertices(void)" (?setupVertices@@YAXXZ) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 __imp___glewGenVertexArrays，函数 "void __cdecl setupVertices(void)" (?setupVertices@@YAXXZ) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp_glGetError，函数 "public: static bool __cdecl Utils::checkOpenGLError(void)" (?checkOpenGLError@Utils@@SA_NXZ) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp_glGetFloatv，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp_glTexParameterf，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp_glTexParameteri，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp_glewIsSupported，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 SOIL_load_OGL_texture，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 SOIL_load_OGL_cubemap，函数 "public: static unsigned int __cdecl Utils::loadCubeMap(char const *)" (?loadCubeMap@Utils@@SAIPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewAttachShader，函数 "public: static unsigned int __cdecl Utils::createShaderProgram(char const *,char const *,char const *,char const *)" (?createShaderProgram@Utils@@SAIPEBD000@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewCompileShader，函数 "private: static unsigned int __cdecl Utils::prepareShader(int,char const *)" (?prepareShader@Utils@@CAIHPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewCreateProgram，函数 "public: static unsigned int __cdecl Utils::createShaderProgram(char const *,char const *,char const *,char const *)" (?createShaderProgram@Utils@@SAIPEBD000@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewCreateShader，函数 "private: static unsigned int __cdecl Utils::prepareShader(int,char const *)" (?prepareShader@Utils@@CAIHPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetProgramInfoLog，函数 "private: static void __cdecl Utils::printProgramLog(int)" (?printProgramLog@Utils@@CAXH@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetProgramiv，函数 "private: static int __cdecl Utils::finalizeShaderProgram(unsigned int)" (?finalizeShaderProgram@Utils@@CAHI@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetShaderInfoLog，函数 "private: static void __cdecl Utils::printShaderLog(unsigned int)" (?printShaderLog@Utils@@CAXI@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewGetShaderiv，函数 "private: static unsigned int __cdecl Utils::prepareShader(int,char const *)" (?prepareShader@Utils@@CAIHPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewLinkProgram，函数 "private: static int __cdecl Utils::finalizeShaderProgram(unsigned int)" (?finalizeShaderProgram@Utils@@CAHI@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewShaderSource，函数 "private: static unsigned int __cdecl Utils::prepareShader(int,char const *)" (?prepareShader@Utils@@CAIHPEBD@Z) 中引用了该符号
+Utils.obj : error LNK2019: 无法解析的外部符号 __imp___glewGenerateMipmap，函数 "public: static unsigned int __cdecl Utils::loadTexture(char const *)" (?loadTexture@Utils@@SAIPEBD@Z) 中引用了该符号
+D:\Tool\OpenglSource\libs\glfw3.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+D:\Tool\OpenglSource\libs\glew32.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+D:\Tool\OpenglSource\libs\soil2-debug.lib : warning LNK4272: 库计算机类型“x86”与目标计算机类型“x64”冲突
+C:\Users\Graveyard\source\repos\openGLts\x64\Debug\openGLts.exe : fatal error LNK1120: 50 个无法解析的外部命令
