@@ -1,0 +1,22 @@
+﻿  main.cpp
+E:\m_graphicswork\Project1\Project1\main.cpp(275,34): warning C4244: “+=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+E:\m_graphicswork\Project1\Project1\main.cpp(284,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(285,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(289,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(290,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(292,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(293,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(295,25): warning C4244: “+=”: 从“double”转换到“GLfloat”，可能丢失数据
+E:\m_graphicswork\Project1\Project1\main.cpp(296,27): warning C4244: “+=”: 从“double”转换到“GLfloat”，可能丢失数据
+  SOIL.lib(SOIL.obj) : 找到 MSIL .netmodule 或使用 /GL 编译的模块；正在使用 /LTCG 重新启动链接；将 /LTCG 添加到链接命令行以改进链接器性能
+LINK : warning LNK4075: 忽略“/INCREMENTAL”(由于“/LTCG”规范)
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+LINK : warning LNK4098: 默认库“LIBCMT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  正在生成代码
+  已完成代码的生成
+glew32s.lib(glew.obj) : warning LNK4099: 未找到 PDB“vc120.pdb”(使用“glew32s.lib(glew.obj)”或在“E:\m_graphicswork\Project1\Debug\vc120.pdb”中寻找)；正在链接对象，如同没有调试信息一样
+  Project1.vcxproj -> E:\m_graphicswork\Project1\Debug\Project1.exe
