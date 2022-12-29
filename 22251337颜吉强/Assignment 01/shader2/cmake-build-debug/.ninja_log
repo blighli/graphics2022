@@ -1,0 +1,8 @@
+# ninja log v5
+0	87	6940190252307997	build.ninja	29e1edf2d70df0fc
+1	515	6937728417357738	CMakeFiles/shader.dir/main.cpp.obj	11d328bb052c9198
+515	628	6937728418224587	shader.exe	32b6d2a5cffe5243
+2	190	6926406260092384	CMakeFiles/shader.dir/src/glad.c.obj	5c1143235ce015d0
+1	297	6940190272825824	CMakeFiles/shader.dir/src/glad.c.obj	77f831b650c33124
+5	549	6940190275327288	CMakeFiles/shader.dir/main.cpp.obj	45bf64a139f15460
+549	772	6940190277463920	shader.exe	32b6d2a5cffe5243
