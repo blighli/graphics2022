@@ -19,10 +19,16 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
-    <None Include="vertShader.glsl">
+    <None Include="vertShader.vert">
       <Filter>源文件</Filter>
     </None>
-    <None Include="fragShader.glsl">
+    <None Include="fragShader.frag">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="fontShader.vert">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="FontShader.frag">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>

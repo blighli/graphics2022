@@ -150,9 +150,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <None Include="fragShader.glsl" />
+    <None Include="FontShader.frag" />
+    <None Include="fontShader.vert" />
+    <None Include="fragShader.frag" />
     <None Include="packages.config" />
-    <None Include="vertShader.glsl" />
+    <None Include="vertShader.vert" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="IntersectEvents.cpp" />

@@ -9,7 +9,22 @@
 #include <glm\glm.hpp>
 #include <glm\gtc\type_ptr.hpp>
 #include <glm\gtc\matrix_transform.hpp>
-
+const float INF = 1000000.0;
+enum ClickedObject
+{
+	None,
+	Sun,
+	Earth
+};
+extern ClickedObject _obj;
+typedef struct _FPoint3 {
+	int x;
+	int y;
+	int z;
+	int r;
+}FPoint3;
+extern int showTimes;
+extern glm::vec3 earthpos;
 class Utils
 {
 private:
@@ -28,7 +43,9 @@ public:
 	static GLuint createShaderProgram(const char* vp, const char* tCS, const char* tES, char* gp, const char* fp);
 	static GLuint loadTexture(const char* texImagePath);
 	static GLuint loadCubeMap(const char* mapDir);
-
+	static float IntersectSphere(glm::vec3 O, glm::vec3 D, glm::vec3 S, float R);
+	static void CastRay(int x, int y, glm::vec3 earthpos);
+	static void CastRay(int x, int y);
 	static float* goldAmbient();
 	static float* goldDiffuse();
 	static float* goldSpecular();

@@ -7,7 +7,7 @@ const float INF = 1000000.0;
 extern float	Scale;					// scaling factor
 extern float	Xrot, Yrot;				// rotation angles in degrees
 extern float	Xscreen, Yscreen;
-extern int showTimes;
+
 //using namespace glm;
 typedef struct _FPoint3 {
 	int x;

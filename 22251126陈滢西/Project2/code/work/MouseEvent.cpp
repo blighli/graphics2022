@@ -16,7 +16,7 @@ int		Xmouse, Ymouse;			// mouse values
 
 float	Xrot, Yrot;				// rotation angles in degrees
 float	Xscreen, Yscreen;
-int showTimes;
+//int showTimes;
 glm::vec3 v(2.f, 2.f, 2.f);
 void MouseButton(int button, int state, int x, int y)
 {
@@ -43,7 +43,7 @@ void MouseButton(int button, int state, int x, int y)
 		Yscreen = y;
 		Xmouse = x;
 		Ymouse = y;
-		CastRay(x,y);
+		//CastRay(x,y);
 		ActiveButton |= b;		// set the proper bit
 	}
 	else
@@ -91,7 +91,7 @@ void Reset()
 	Xrot = Yrot = 0.;
 }
 
-void CastRay(int x, int y)
+/*void CastRay(int x, int y)
 {
 	GLint    viewport[4];
 	GLdouble modelview[16];
@@ -137,4 +137,4 @@ float IntersectSphere(glm::vec3 O, glm::vec3 D, glm::vec3 S, float R)
 	}
 	else return INF;
 
-}
+}*/
