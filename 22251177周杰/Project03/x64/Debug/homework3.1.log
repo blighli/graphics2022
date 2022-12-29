@@ -1,0 +1,14 @@
+﻿  homework3.1.cpp
+C:\Users\Dave\source\repos\homework3.1\Shader.h(56,40): warning C4101: “e”: 未引用的局部变量
+C:\Users\Dave\source\repos\homework3.1\Mesh.h(90,1): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(216,28): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(268,61): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(269,66): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(441,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(442,17): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(446,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(447,19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(449,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(450,13): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Users\Dave\source\repos\homework3.1\homework3.1.cpp(459,31): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  homework3.1.vcxproj -> C:\Users\Dave\source\repos\homework3.1\x64\Debug\homework3.1.exe
