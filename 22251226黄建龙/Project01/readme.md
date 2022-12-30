@@ -12,11 +12,11 @@ Programs run on Python 3.8.3  Windows 10 21H2
 
 1. If working with a native Python, please use pip command as
 
-​        pip install PyOpenGL PyOpenGL_accelerate
+    pip install PyOpenGL PyOpenGL_accelerate
 
 2. If working with a Conda-based package (e.g., Anaconda, Miniconda), please use conda command as
 
-​       conda install PyOpenGL PyOpenGL_accelerate
+    conda install PyOpenGL PyOpenGL_accelerate
 
 
 
@@ -32,7 +32,7 @@ Programs run on Python 3.8.3  Windows 10 21H2
 
 2. Having the two .whl files, use
 
-   pip install path_to_the_whl_file.whl
+    pip install path_to_the_whl_file.whl
 
 
 
