@@ -1,0 +1,17 @@
+﻿main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowShouldClose，函数 "void __cdecl processInput(struct GLFWwindow *,int,int,int,int)" (?processInput@@YAXPAUGLFWwindow@@HHHH@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetFramebufferSize，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，函数 "void __cdecl processInput(struct GLFWwindow *,int,int,int,int)" (?processInput@@YAXPAUGLFWwindow@@HHHH@Z) 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetKeyCallback，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPosCallback，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，函数 _main 中引用了该符号
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetProcAddress，函数 _main 中引用了该符号
+F:\daima\三维动画与交互技术作业1\Debug\三维动画与交互技术作业1.exe : fatal error LNK1120: 16 个无法解析的外部命令
