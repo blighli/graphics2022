@@ -1,0 +1,11 @@
+﻿  border.cpp
+  main.cpp
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.22621.0\shared\minwindef.h(130,1): warning C4005: “APIENTRY”: 宏重定义
+D:\Library\vcpkg\installed\x64-windows\include\glad\glad.h(32): message : 参见“APIENTRY”的前一个定义
+D:\Code\graphics2022\22251025王威\mpm\mpm\main.cpp(193,56): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+  node.cpp
+  particle.cpp
+  solver.cpp
+  vector.cpp
+  正在生成代码...
+  mpm.vcxproj -> D:\Code\graphics2022\22251025王威\mpm\x64\Debug\mpm.exe
