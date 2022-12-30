@@ -7,12 +7,6 @@ Please follow these steps:
 
 
 
-The below figure is the sample output:
-
-![sample_output](F:\浙大\202209\3D动画与交互技术\22251226黄建龙\Project03\sampleoutput\sample_output.jpg)
-
-
-
 ##### 交互方式：
 
 WASD：移动摄像头水平位置
