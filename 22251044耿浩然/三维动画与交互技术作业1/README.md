@@ -16,4 +16,4 @@
 
 ## 效果图
 
-![result]([F:.\result.jpg](https://github.com/CComedian/graphics2022/raw/main/22251044%E8%80%BF%E6%B5%A9%E7%84%B6/%E4%B8%89%E7%BB%B4%E5%8A%A8%E7%94%BB%E4%B8%8E%E4%BA%A4%E4%BA%92%E6%8A%80%E6%9C%AF%E4%BD%9C%E4%B8%9A1/result.jpg))
+![result](https://github.com/CComedian/graphics2022/blob/main/22251044%E8%80%BF%E6%B5%A9%E7%84%B6/%E4%B8%89%E7%BB%B4%E5%8A%A8%E7%94%BB%E4%B8%8E%E4%BA%A4%E4%BA%92%E6%8A%80%E6%9C%AF%E4%BD%9C%E4%B8%9A1/result.jpg)
