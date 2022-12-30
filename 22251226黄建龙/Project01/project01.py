@@ -5,7 +5,6 @@ from OpenGL.GLU import *
 import math
 import numpy as np
 import random
-import glfw
 
 # camera
 camera_position_ = np.array([0.0, 0.0, 2.0])
