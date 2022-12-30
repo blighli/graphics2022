@@ -1,3 +1,4 @@
 numpy
 pyopengl==3.1.6
+PyOpenGL_accelerate==3.1.6
 pillow==9.2.0
