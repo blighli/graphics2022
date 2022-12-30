@@ -7,7 +7,7 @@
  *  * 鼠标选择，点击不同球体显示不同名称✔️
  
 点击查看发布在bilibili上的[程序视频](
-https://www.bilibili.com/video/BV15K411i78i/)❤️
+https://www.bilibili.com/video/BV15K411i78i/?vd_source=881f21b11ef8e2832f37c7c84736a66c)❤️
 
 ---
 # 解决方案
@@ -50,3 +50,4 @@ step4:应用纹理
  step4:检测射线是否与各个天体的球体相交，返回相交距离最近的物体
  
  step5:贴图显示相交天体的名称
+
