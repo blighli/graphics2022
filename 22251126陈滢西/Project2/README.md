@@ -5,7 +5,10 @@
  *  **可选特性✔️**
  * *  使用顶点着色器和片段着色器，自己实现光照效果✔️
  *  * 鼠标选择，点击不同球体显示不同名称✔️
- 
+
+ **实现效果❤️：**
+![image](https://github.com/seimeicyx/graphics2022/blob/main/22251126%E9%99%88%E6%BB%A2%E8%A5%BF/Project2/result.gif)
+
 点击查看发布在bilibili上的[程序视频](
 https://www.bilibili.com/video/BV15K411i78i/?vd_source=881f21b11ef8e2832f37c7c84736a66c)❤️
 
