@@ -1,2 +1,2 @@
-numpy==1.23.5
+numpy
 pyopengl==3.6.1
