@@ -1,0 +1,7 @@
+﻿  Texture.cpp
+  VAO.cpp
+F:\daima\三维动画与交互技术作业1\三维动画与交互技术作业1\VAO.cpp(11,63): warning C4244: “参数”: 从“GLsizeiptr”转换到“GLsizei”，可能丢失数据
+  VBO.cpp
+  shaderClass.cpp
+  正在生成代码...
+  三维动画与交互技术作业1.vcxproj -> F:\daima\三维动画与交互技术作业1\x64\Debug\三维动画与交互技术作业1.exe

@@ -1,0 +1,38 @@
+﻿  Camera.cpp
+  EBO.cpp
+  Main.cpp
+  shaderClass.cpp
+  Sphere.cpp
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\Sphere.cpp(7,18): warning C4244: “=”: 从“int”转换到“GLfloat”，可能丢失数据
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\Sphere.cpp(8,21): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\Sphere.cpp(9,22): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\Sphere.cpp(86,14): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\Sphere.cpp(87,15): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+  stb.cpp
+  Texture.cpp
+  VAO.cpp
+F:\三维动画作业\graphics2022\三维动画与交互技术作业2\三维动画与交互技术作业2\VAO.cpp(11,63): warning C4244: “参数”: 从“GLsizeiptr”转换到“GLsizei”，可能丢失数据
+  VBO.cpp
+  glad.c
+LINK : warning LNK4098: 默认库“MSVCRTD”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  正在生成代码
+  434 of 442 functions (98.2%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    2 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+glfw3.lib(input.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(input.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_window.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_window.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_joystick.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_joystick.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_time.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_time.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_thread.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_thread.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_init.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_init.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(win32_monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(win32_monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(monitor.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(monitor.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(vulkan.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(vulkan.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(wgl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(wgl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(egl_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(egl_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+glfw3.lib(osmesa_context.obj) : warning LNK4099: 未找到 PDB“”(使用“glfw3.lib(osmesa_context.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  三维动画与交互技术作业2.vcxproj -> F:\三维动画作业\graphics2022\三维动画与交互技术作业2\x64\Release\三维动画与交互技术作业2.exe
