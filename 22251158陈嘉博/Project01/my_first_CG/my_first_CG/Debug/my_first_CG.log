@@ -1,0 +1,5 @@
+﻿  main.cpp
+main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，该符号在函数 _main 中被引用
+C:\Users\eden.chen\Desktop\mycode\my_first_CG\thirdparty\gl\lib\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\eden.chen\Desktop\mycode\my_first_CG\Debug\my_first_CG.exe : fatal error LNK1120: 2 个无法解析的外部命令
