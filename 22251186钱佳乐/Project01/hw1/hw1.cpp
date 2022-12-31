@@ -21,8 +21,8 @@ unsigned int load_texture(const char* path);
 unsigned int loadCubemap(std::vector<std::string> faces);
 
 // settings
-const unsigned int SCR_WIDTH = 800;
-const unsigned int SCR_HEIGHT = 600;
+const unsigned int SCR_WIDTH = 1280;
+const unsigned int SCR_HEIGHT = 720;
 GLFWwindow* window = nullptr;
 
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
@@ -41,7 +41,7 @@ int init()
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "OpenGL", NULL, NULL);
+	window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "22251186-QJL", NULL, NULL);
 	if (window == NULL)
 	{
 		std::cout << "创建窗口失败" << std::endl;
@@ -300,6 +300,8 @@ int main()
 	skyboxShader.setInt("skybox", 0);
 	glActiveTexture(GL_TEXTURE0);
 	glBindTexture(GL_TEXTURE_2D, cubemapTexture);
+
+	glViewport(0, 0, SCR_WIDTH, SCR_HEIGHT);
 
 	// render loop
 	while (!glfwWindowShouldClose(window))
