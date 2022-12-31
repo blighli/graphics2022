@@ -1,0 +1,5 @@
+﻿  glad.c
+  main.cpp
+c:\users\eden.chen\desktop\graphics2022\22251158陈嘉博\project01\my_first_cg\my_first_cg\shader.h(3): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+  my_first_CG.vcxproj -> C:\Users\eden.chen\Desktop\graphics2022\22251158陈嘉博\Project01\my_first_CG\x64\Debug\my_first_CG.exe
