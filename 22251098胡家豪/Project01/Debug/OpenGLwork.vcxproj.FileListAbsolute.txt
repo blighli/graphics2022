@@ -1,0 +1,2 @@
+D:\OpenGLwork\OpenGLwork\Project01\Debug\OpenGLwork.exe
+D:\OpenGLwork\OpenGLwork\Project01\Debug\OpenGLwork.pdb
