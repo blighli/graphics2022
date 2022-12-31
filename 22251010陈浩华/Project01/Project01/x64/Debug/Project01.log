@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\chh320\Desktop\Task\Homework\三维动画\22251010陈浩华\environment\includes\learnopengl\sphere.h(11,17): warning C4305: “初始化”: 从“double”到“const float”截断
+  Project01.vcxproj -> C:\Users\chh320\Desktop\Task\Homework\三维动画\22251010陈浩华\Project01\x64\Debug\Project01.exe
