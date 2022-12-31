@@ -10,4 +10,4 @@
 - 使用上下左右控制视角旋转，F1拉近视角，F2拉远视角
 ------------
 ## 效果图
-![img.jpg](img.jpg)
+![img](https://user-images.githubusercontent.com/96706261/210126783-1ede43bb-b0c9-4b3d-890a-a408e3626e5b.jpg)
