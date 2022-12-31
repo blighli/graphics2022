@@ -1,0 +1,9 @@
+﻿  源.cpp
+D:\C++ rep\Project01\Project01\源.cpp(271,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(272,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(276,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(277,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(278,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(279,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project01\Project01\源.cpp(281,26): warning C4305: “初始化”: 从“double”到“float”截断
+  Project01.vcxproj -> D:\C++ rep\Project01\x64\Debug\Project01.exe
