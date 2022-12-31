@@ -14,4 +14,4 @@
 - 使用上下左右控制视角旋转，鼠标控制视角旋转
 ------------
 ## 效果图
-![img_1.png](img_1.png)
+![img_1](https://user-images.githubusercontent.com/96706261/210126800-dbf5caae-022e-4946-8270-d960f3c1c565.png)
