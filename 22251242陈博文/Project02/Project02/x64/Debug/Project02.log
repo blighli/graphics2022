@@ -1,0 +1,27 @@
+﻿  main.cpp
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(220,50): warning C4305: “参数”: 从“double”到“float”截断
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(297,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(298,11): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(430,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(431,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(435,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(436,16): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(437,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(438,10): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(440,26): warning C4305: “初始化”: 从“double”到“float”截断
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(459,47): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(460,12): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+C:\Code\VisualStudio\OpenGL\Project02\Project02\main.cpp(461,47): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+  Project02.vcxproj -> C:\Code\VisualStudio\OpenGL\Project02\x64\Debug\Project02.exe
