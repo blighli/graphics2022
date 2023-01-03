@@ -1,33 +1,33 @@
 ﻿  源.cpp
-D:\C++ rep\Project03\Project03\源.cpp(117,54): warning C4305: “参数”: 从“double”到“float”截断
 D:\C++ rep\Project03\Project03\源.cpp(125,54): warning C4305: “参数”: 从“double”到“float”截断
-D:\C++ rep\Project03\Project03\源.cpp(126,55): warning C4305: “参数”: 从“double”到“float”截断
-D:\C++ rep\Project03\Project03\源.cpp(395,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(396,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(406,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(407,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(408,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(409,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(411,27): warning C4305: “初始化”: 从“double”到“float”截断
-D:\C++ rep\Project03\Project03\源.cpp(430,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(133,54): warning C4305: “参数”: 从“double”到“float”截断
+D:\C++ rep\Project03\Project03\源.cpp(134,55): warning C4305: “参数”: 从“double”到“float”截断
+D:\C++ rep\Project03\Project03\源.cpp(430,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(431,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(441,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(442,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(443,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(444,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(446,27): warning C4305: “初始化”: 从“double”到“float”截断
+D:\C++ rep\Project03\Project03\源.cpp(465,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
           with
           [
               T=float
           ]
-D:\C++ rep\Project03\Project03\源.cpp(431,13): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(466,13): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
           with
           [
               T=float
           ]
-D:\C++ rep\Project03\Project03\源.cpp(432,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(467,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
           with
           [
               T=float
           ]
-D:\C++ rep\Project03\Project03\源.cpp(444,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(445,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(450,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(451,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
-D:\C++ rep\Project03\Project03\源.cpp(453,28): warning C4305: “初始化”: 从“double”到“float”截断
-D:\C++ rep\Project03\Project03\源.cpp(487,27): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(479,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(480,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(485,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(486,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\Project03\Project03\源.cpp(488,28): warning C4305: “初始化”: 从“double”到“float”截断
+D:\C++ rep\Project03\Project03\源.cpp(512,27): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
   Project03.vcxproj -> D:\C++ rep\Project03\x64\Debug\Project03.exe

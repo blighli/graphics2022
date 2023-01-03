@@ -1,0 +1,76 @@
+﻿  源.cpp
+D:\C++ rep\TheRoom\TheRoom\源.cpp(369,100): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(372,63): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(388,76): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(429,102): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(433,66): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(449,76): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(489,102): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(493,66): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(509,76): warning C4305: “参数”: 从“double”到“T”截断
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(654,14): warning C4101: “monsterangle”: 未引用的局部变量
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1097,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1098,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1108,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1109,17): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1110,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1111,11): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1113,27): warning C4305: “初始化”: 从“double”到“float”截断
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1132,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1133,13): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1134,51): warning C4244: “=”: 从“double”转换到“T”，可能丢失数据
+          with
+          [
+              T=float
+          ]
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1146,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1147,18): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1152,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1153,12): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1155,28): warning C4305: “初始化”: 从“double”到“float”截断
+D:\C++ rep\TheRoom\TheRoom\源.cpp(1189,29): warning C4244: “-=”: 从“double”转换到“float”，可能丢失数据
+  TheRoom.vcxproj -> D:\C++ rep\TheRoom\x64\Debug\TheRoom.exe
