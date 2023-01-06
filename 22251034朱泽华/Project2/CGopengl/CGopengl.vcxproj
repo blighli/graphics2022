@@ -132,6 +132,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="cast_ray.cpp" />
     <ClCompile Include="E:\imgui\imgui-master\backends\imgui_impl_glfw.cpp" />
     <ClCompile Include="E:\imgui\imgui-master\backends\imgui_impl_opengl3.cpp" />
     <ClCompile Include="E:\imgui\imgui-master\backends\imgui_impl_win32.cpp" />
@@ -156,6 +157,8 @@
     <None Include="color.fs" />
     <None Include="color.vs" />
     <None Include="color_pic.fs" />
+    <None Include="light_caster.fs" />
+    <None Include="light_caster.vs" />
     <None Include="light_cube.fs" />
     <None Include="light_cube.vs" />
   </ItemGroup>

@@ -51,6 +51,9 @@
     <ClCompile Include="light.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="cast_ray.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -83,6 +86,12 @@
       <Filter>源文件</Filter>
     </None>
     <None Include="color_pic.fs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="light_caster.vs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="light_caster.fs">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>
