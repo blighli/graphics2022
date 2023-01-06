@@ -48,6 +48,9 @@
     <ClCompile Include="tri_2.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="light.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="shader.h">
@@ -56,12 +59,30 @@
     <ClInclude Include="stb_image.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="camera.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3.shader.vs">
       <Filter>源文件</Filter>
     </None>
     <None Include="3.3.shader.fs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="color.vs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="color.fs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="light_cube.vs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="light_cube.fs">
+      <Filter>源文件</Filter>
+    </None>
+    <None Include="color_pic.fs">
       <Filter>源文件</Filter>
     </None>
   </ItemGroup>

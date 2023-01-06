@@ -141,16 +141,23 @@
     <ClCompile Include="E:\imgui\imgui-master\imgui_tables.cpp" />
     <ClCompile Include="E:\imgui\imgui-master\imgui_widgets.cpp" />
     <ClCompile Include="E:\OpenGL\glad\src\glad.c" />
+    <ClCompile Include="light.cpp" />
     <ClCompile Include="test.cpp" />
     <ClCompile Include="tri_2.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="camera.h" />
     <ClInclude Include="shader.h" />
     <ClInclude Include="stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="3.3.shader.fs" />
     <None Include="3.3.shader.vs" />
+    <None Include="color.fs" />
+    <None Include="color.vs" />
+    <None Include="color_pic.fs" />
+    <None Include="light_cube.fs" />
+    <None Include="light_cube.vs" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

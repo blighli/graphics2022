@@ -1,0 +1,6 @@
+﻿  Building Custom Rule E:/OpenGL/glfw-3.3.8/tests/CMakeLists.txt
+  title.c
+E:\OpenGL\glfw-3.3.8\tests\title.c(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+  glad_gl.c
+  正在生成代码...
+  title.vcxproj -> E:\OpenGL\glfw-3.3.8\build\tests\Debug\title.exe
