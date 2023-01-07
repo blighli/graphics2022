@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\OpenGL\glfw-3.3.8\tests\triangle-vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\OpenGL\glfw-3.3.8\deps\glad_vulkan.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\OpenGL\glfw-3.3.8\deps\glad\vulkan.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\OpenGL\glfw-3.3.8\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{B4B70DE9-A914-33A4-B0A4-18824A3B6C08}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C20FF4C9-D439-3C23-8AB2-1FEFF48BE479}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
