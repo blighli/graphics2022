@@ -1,0 +1,13 @@
+#version 330 core
+in vec2 TexCoord;
+in vec3 Normal;
+out vec4 FragColor;
+
+uniform sampler2D ourTexture;
+uniform vec3 toLight;
+void main()
+{ 
+    vec4 objColor = texture(ourTexture, TexCoord);
+    float diff = max(dot(Normal, toLight), 0.0);
+    FragColor = objColor * diff + 0.2 * objColor;
+} 
