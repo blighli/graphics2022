@@ -1,0 +1,15 @@
+﻿  main.cpp
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\utils\sphere.h(19): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\utils\sphere.h(20): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(134): warning C4305: “初始化”: 从“double”到“float”截断
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(135): warning C4305: “初始化”: 从“double”到“float”截断
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(149): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(208): warning C4305: “-=”: 从“double”到“float”截断
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(262): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(263): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(267): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(268): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(270): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(271): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+d:\study\研究\zju\三维动画\coding\graphics2021\22151116练云轩\project02\project02\main.cpp(278): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Project02.vcxproj -> D:\STUDY\研究\zju\三维动画\coding\graphics2021\22151116练云轩\Project02\Debug\Project02.exe
