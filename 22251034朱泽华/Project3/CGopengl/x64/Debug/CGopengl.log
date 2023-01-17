@@ -1,2 +1,0 @@
-﻿model.obj : error LNK2005: "unsigned int __cdecl TextureFromFile(char const *,class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > const &,bool)" (?TextureFromFile@@YAIPEBDAEBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@_N@Z) 已经在 assimp.obj 中定义
-C:\Users\Administrator\source\repos\CGopengl\x64\Debug\CGopengl.exe : fatal error LNK1169: 找到一个或多个多重定义的符号
