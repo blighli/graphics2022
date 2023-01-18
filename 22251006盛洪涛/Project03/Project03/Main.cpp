@@ -7,12 +7,15 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
 #include <iostream>
+#include <RenderStruct.h>
+#include <filesystem>
+#include <camera.h>
 
-glm::vec3 cameraPos = glm::vec3(0.0f, 0.0f, 3.0f);
-glm::vec3 cameraFront = glm::vec3(0.0f, 0.0f, -1.0f);
-glm::vec3 cameraUp = glm::vec3(0.0f, 1.0f, 0.0f);
-
-
+const unsigned int SCR_WIDTH = 800;
+const unsigned int SCR_HEIGHT = 600;
+Camera camera(glm::vec3(0.0f, 10.0f, 3.0f));
+float deltaTime = 0.0f;
+float lastFrame = 0.0f;
 void framebuffer_size_callback(GLFWwindow* window, int width, int height)
 {
     glViewport(0, 0, width, height);
@@ -22,65 +25,43 @@ void processInput(GLFWwindow* window)
 {
     if (glfwGetKey(window, GLFW_KEY_ESCAPE) == GLFW_PRESS)
         glfwSetWindowShouldClose(window, true);
-    float cameraSpeed = 0.05f; // adjust accordingly
+
     if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
-        cameraPos += cameraSpeed * cameraFront;
+        camera.ProcessKeyboard(FORWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_S) == GLFW_PRESS)
-        cameraPos -= cameraSpeed * cameraFront;
-    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
-        cameraPos += cameraSpeed * cameraUp;
-    if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
-        cameraPos -= cameraSpeed * cameraUp;
+        camera.ProcessKeyboard(BACKWARD, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_A) == GLFW_PRESS)
-        cameraPos -= glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.ProcessKeyboard(LEFT, deltaTime);
     if (glfwGetKey(window, GLFW_KEY_D) == GLFW_PRESS)
-        cameraPos += glm::normalize(glm::cross(cameraFront, cameraUp)) * cameraSpeed;
+        camera.ProcessKeyboard(RIGHT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_Q) == GLFW_PRESS)
+        camera.ProcessKeyboard(UUP, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_E) == GLFW_PRESS)
+        camera.ProcessKeyboard(DOWN, deltaTime);
+
+    if (glfwGetKey(window, GLFW_KEY_I) == GLFW_PRESS)
+        camera.ProcessKeyboard(QFORWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_K) == GLFW_PRESS)
+        camera.ProcessKeyboard(QBACKWARD, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_J) == GLFW_PRESS)
+        camera.ProcessKeyboard(QLEFT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_L) == GLFW_PRESS)
+        camera.ProcessKeyboard(QRIGHT, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_U) == GLFW_PRESS)
+        camera.ProcessKeyboard(QUUP, deltaTime);
+    if (glfwGetKey(window, GLFW_KEY_O) == GLFW_PRESS)
+        camera.ProcessKeyboard(QDOWN, deltaTime);
 }
 
+void printfmat(glm::mat4 mat) {
+    for (int i = 0; i < 4; i++) {
+        for (int j = 0; j < 4; j++) {
+            printf("%f ",mat[i][j]);
+        }
+        printf("\n");
+    }
+}
 
-float vertices[] = {
-       -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,0.0f, 0.0f,
-        0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,1.0f, 0.0f,
-        0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,1.0f, 1.0f,
-        0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,1.0f, 1.0f,
-       -0.5f,  0.5f, -0.5f,  0.0f,  0.0f, -1.0f,0.0f, 1.0f,
-       -0.5f, -0.5f, -0.5f,  0.0f,  0.0f, -1.0f,0.0f, 0.0f,
-
-       -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,0.0f, 0.0f,
-        0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,1.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,1.0f, 1.0f,
-        0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,1.0f, 1.0f,
-       -0.5f,  0.5f,  0.5f,  0.0f,  0.0f, 1.0f,0.0f, 1.0f,
-       -0.5f, -0.5f,  0.5f,  0.0f,  0.0f, 1.0f,0.0f, 0.0f,
-
-       -0.5f,  0.5f,  0.5f,  -1.0f,  0.0f,  0.0f,1.0f, 0.0f,
-       -0.5f,  0.5f, -0.5f,  -1.0f,  0.0f,  0.0f,1.0f, 1.0f,
-       -0.5f, -0.5f, -0.5f,  -1.0f,  0.0f,  0.0f,0.0f, 1.0f,
-       -0.5f, -0.5f, -0.5f,  -1.0f,  0.0f,  0.0f,0.0f, 1.0f,
-       -0.5f, -0.5f,  0.5f,  -1.0f,  0.0f,  0.0f,0.0f, 0.0f,
-       -0.5f,  0.5f,  0.5f,  -1.0f,  0.0f,  0.0f,1.0f, 0.0f,
-
-        0.5f,  0.5f,  0.5f,   1.0f,  0.0f,  0.0f,1.0f, 0.0f,
-        0.5f,  0.5f, -0.5f,   1.0f,  0.0f,  0.0f,1.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,   1.0f,  0.0f,  0.0f,0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,   1.0f,  0.0f,  0.0f,0.0f, 1.0f,
-        0.5f, -0.5f,  0.5f,   1.0f,  0.0f,  0.0f,0.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,   1.0f,  0.0f,  0.0f,1.0f, 0.0f,
-
-       -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,0.0f, 1.0f,
-        0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,1.0f, 1.0f,
-        0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,1.0f, 0.0f,
-        0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,1.0f, 0.0f,
-       -0.5f, -0.5f,  0.5f,  0.0f, -1.0f,  0.0f,0.0f, 0.0f,
-       -0.5f, -0.5f, -0.5f,  0.0f, -1.0f,  0.0f,0.0f, 1.0f,
-
-       -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,0.0f, 1.0f,
-        0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,1.0f, 1.0f,
-        0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,1.0f, 0.0f,
-        0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f,1.0f, 0.0f,
-       -0.5f,  0.5f,  0.5f,  0.0f,  1.0f,  0.0f, 0.0f, 0.0f,
-       -0.5f,  0.5f, -0.5f,  0.0f,  1.0f,  0.0f,0.0f, 1.0f
-};
 
 int main() {
     glfwInit();
@@ -88,7 +69,7 @@ int main() {
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
     //glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
-    GLFWwindow* window = glfwCreateWindow(800, 600, "LearnOpenGL", NULL, NULL);
+    GLFWwindow* window = glfwCreateWindow(SCR_WIDTH,SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
         std::cout << "Failed to create GLFW window" << std::endl;
@@ -103,15 +84,10 @@ int main() {
     }
     glViewport(0, 0, 800, 600);
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
-
-
-    unsigned int VAO;
-    glGenVertexArrays(1, &VAO);
-    glBindVertexArray(VAO);
-    unsigned int VBO;
-    glGenBuffers(1, &VBO);
-    glBindBuffer(GL_ARRAY_BUFFER, VBO);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices), vertices, GL_STATIC_DRAW);
+    std::string objPath = "Resource/nanosuit/nanosuit.obj";
+    Model ourModel(objPath.c_str());
+    stbi_set_flip_vertically_on_load(false);
+   
     
 
     unsigned int shaderProgram;
@@ -125,63 +101,53 @@ int main() {
     glUseProgram(shaderProgram);
 
 
-    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)0);
-    glEnableVertexAttribArray(0);
-    // texture coord attribute
-    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(3 * sizeof(float)));
-    glEnableVertexAttribArray(1);
-
-    glVertexAttribPointer(2, 2, GL_FLOAT, GL_FALSE, 8 * sizeof(float), (void*)(6 * sizeof(float)));
-    glEnableVertexAttribArray(2);
-
-
-    unsigned int texture1;
-    glGenTextures(1, &texture1);
-    glBindTexture(GL_TEXTURE_2D, texture1);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    int TWidth, THeight, nrChannels;
-    stbi_set_flip_vertically_on_load(true); // tell stb_image.h to flip loaded texture's on the y-axis.
-    unsigned char* data = stbi_load("Resource/container.jpg", &TWidth, &THeight, &nrChannels, 0);
-    std::cout << TWidth << " " << THeight << std::endl;
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, TWidth, THeight, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
-    glGenerateMipmap(GL_TEXTURE_2D);
-
-
-    int width = 800,height = 600;
-    glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-    glm::mat4 projection = glm::perspective(glm::radians(45.0f), (float)width / (float)height, 0.1f, 100.0f);
-    glm::mat4 model;
-    unsigned int transformLoc = glGetUniformLocation(shaderProgram, "view");
-    glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(view));
-
-    unsigned int projectionLoc = glGetUniformLocation(shaderProgram, "projection");
-    glUniformMatrix4fv(projectionLoc, 1, GL_FALSE, glm::value_ptr(projection));
-
-    int modelLoc = glGetUniformLocation(shaderProgram, "model");
-    glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-    glEnable(GL_DEPTH_TEST);
-
-    glm::vec3 toLight(4,10,-1);
-    toLight = glm::normalize(toLight);
-    int toLightLoc = glGetUniformLocation(shaderProgram, "toLight");
-    glUniform3f(toLightLoc, toLight.x,toLight.y,toLight.z);
 
     while (!glfwWindowShouldClose(window))
     {
+        float currentFrame = static_cast<float>(glfwGetTime());
+        deltaTime = currentFrame - lastFrame;
+        lastFrame = currentFrame;
+
+        // input
+        // -----
         processInput(window);
-        glm::mat4 view = glm::lookAt(cameraPos, cameraPos + cameraFront, cameraUp);
-        unsigned int transformLoc = glGetUniformLocation(shaderProgram, "view");
-        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(view));
-        glClearColor(0.2f, 0.3f, 0.3f, 1.0f);
+
+        // render
+        // ------
+        glClearColor(0.05f, 0.05f, 0.05f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-        glBindTexture(GL_TEXTURE_2D, texture1);
-        glBindVertexArray(VAO);
-        glDrawArrays(GL_TRIANGLES, 0, 36);
-        glfwPollEvents();
+
+        // don't forget to enable shader before setting uniforms
+
+        // view/projection transformations
+        glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
+        glm::mat4 view = camera.GetViewMatrix();
+        unsigned int transformLoc = glGetUniformLocation(shaderProgram, "projection");
+        glUniformMatrix4fv(transformLoc, 1, GL_FALSE, glm::value_ptr(projection));
+        unsigned int transformLoc2 = glGetUniformLocation(shaderProgram, "view");
+        glUniformMatrix4fv(transformLoc2, 1, GL_FALSE, glm::value_ptr(view));
+
+
+        // render the loaded model
+        glm::mat4 model = glm::mat4(1.0f);
+        model = glm::translate(model, glm::vec3(0.0f, 0.0f, 0.0f)); // translate it down so it's at the center of the scene
+        model = glm::scale(model, glm::vec3(1.0f, 1.0f, 1.0f));	// it's a bit too big for our scene, so scale it down
+        unsigned int transformLoc3 = glGetUniformLocation(shaderProgram, "model");
+        glUniformMatrix4fv(transformLoc3, 1, GL_FALSE, glm::value_ptr(model));
+
+        glm::mat4 mvinverse = view * model;
+        mvinverse = glm::inverse(mvinverse);
+        mvinverse = glm::transpose(mvinverse);
+        unsigned int transformLoc4 = glGetUniformLocation(shaderProgram, "mvinverse");
+        glUniformMatrix4fv(transformLoc4, 1, GL_FALSE, glm::value_ptr(mvinverse));
+
+        ourModel.Draw(vs);
+
+
+        // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
+        // -------------------------------------------------------------------------------
         glfwSwapBuffers(window);
+        glfwPollEvents();
     }
 
     glfwTerminate();

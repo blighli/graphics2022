@@ -1,13 +1,23 @@
 #version 330 core
-in vec2 TexCoord;
-in vec3 Normal;
 out vec4 FragColor;
 
-uniform sampler2D ourTexture;
-uniform vec3 toLight;
+in vec4 Normal;
+in vec2 TexCoords;
+in float dot1;
+in float dot2;
+uniform sampler2D texture_diffuse1;
+uniform sampler2D texture_diffuse2;
+uniform sampler2D texture_diffuse3;
+uniform sampler2D texture_diffuse4;
+uniform sampler2D texture_specular1;
+uniform sampler2D texture_specular2;
+uniform sampler2D texture_specular3;
+uniform sampler2D texture_specular4;
+
+
 void main()
-{ 
-    vec4 objColor = texture(ourTexture, TexCoord);
-    float diff = max(dot(Normal, toLight), 0.0);
-    FragColor = objColor * diff + 0.2 * objColor;
-} 
+{    
+    vec4 diffuse = texture(texture_diffuse1, TexCoords);
+    vec4 specular = texture(texture_specular1,TexCoords);
+    FragColor +=2* diffuse * dot1 + 10*specular * pow(dot2,5);
+}
