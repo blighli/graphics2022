@@ -1,0 +1,29 @@
+﻿  glad.c
+  main.cpp
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\shader.h(56): warning C4101: “e”: 未引用的局部变量
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(85): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(143): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(144): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(147): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(148): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(149): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(150): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(156): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+main.obj : error LNK2019: 无法解析的外部符号 _glfwInit，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwTerminate，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowHint，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwCreateWindow，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwWindowShouldClose，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetWindowShouldClose，该符号在函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetFramebufferSizeCallback，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwPollEvents，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetInputMode，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetKey，该符号在函数 "void __cdecl processInput(struct GLFWwindow *)" (?processInput@@YAXPAUGLFWwindow@@@Z) 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetCursorPosCallback，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSetScrollCallback，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetTime，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwMakeContextCurrent，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwSwapBuffers，该符号在函数 _main 中被引用
+main.obj : error LNK2019: 无法解析的外部符号 _glfwGetProcAddress，该符号在函数 _main 中被引用
+C:\Users\eden.chen\Desktop\graphics22\graphics2022\22251158陈嘉博\Project03\Project03\..\thirdparty\gl\lib\glfw3.lib : warning LNK4272: 库计算机类型“x64”与目标计算机类型“x86”冲突
+C:\Users\eden.chen\Desktop\graphics22\graphics2022\22251158陈嘉博\Project03\Debug\Project03.exe : fatal error LNK1120: 16 个无法解析的外部命令

@@ -1,0 +1,22 @@
+﻿  main.cpp
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\shader.h(56): warning C4101: “e”: 未引用的局部变量
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\mesh.h(80): warning C4267: “参数”: 从“size_t”转换到“GLsizei”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(107): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(159): warning C4244: “参数”: 从“genType”转换到“float”，可能丢失数据
+          with
+          [
+              genType=double
+          ]
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(160): warning C4244: “参数”: 从“genType”转换到“float”，可能丢失数据
+          with
+          [
+              genType=double
+          ]
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(214): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(215): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(219): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(220): warning C4244: “初始化”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(222): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(223): warning C4244: “=”: 从“double”转换到“float”，可能丢失数据
+c:\users\eden.chen\desktop\graphics22\graphics2022\22251158陈嘉博\project03\project03\main.cpp(232): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Project03.vcxproj -> C:\Users\eden.chen\Desktop\graphics22\graphics2022\22251158陈嘉博\Project03\x64\Debug\Project03.exe

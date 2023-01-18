@@ -167,7 +167,7 @@ int main() {
 	//GLFE
 	glfwInit();
 	//´°¿Ú
-	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "Project02", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "cjbProject02", NULL, NULL);
 	glfwMakeContextCurrent(window);
 	//GLAD
 	gladLoadGLLoader((GLADloadproc)glfwGetProcAddress);
