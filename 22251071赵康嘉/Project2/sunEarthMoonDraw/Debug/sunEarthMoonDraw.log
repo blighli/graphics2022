@@ -1,0 +1,20 @@
+﻿  main.cpp
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\camera.h(95,20): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(146,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(147,11): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(151,18): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(152,18): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(154,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(155,10): warning C4244: “=”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(162,28): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(190,27): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\main.cpp(595,30): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+  Sphere.cpp
+  Utils.cpp
+  正在生成代码...
+LINK : warning LNK4098: 默认库“MSVCRT”与其他库的使用冲突；请使用 /NODEFAULTLIB:library
+soil2.lib(SOIL2.obj) : warning LNK4099: 未找到 PDB“”(使用“soil2.lib(SOIL2.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(image_DXT.obj) : warning LNK4099: 未找到 PDB“”(使用“soil2.lib(image_DXT.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(image_helper.obj) : warning LNK4099: 未找到 PDB“”(使用“soil2.lib(image_helper.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+soil2.lib(wfETC.obj) : warning LNK4099: 未找到 PDB“”(使用“soil2.lib(wfETC.obj)”或在“”中寻找)；正在链接对象，如同没有调试信息一样
+  sunEarthMoonDraw.vcxproj -> C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\Debug\sunEarthMoonDraw.exe

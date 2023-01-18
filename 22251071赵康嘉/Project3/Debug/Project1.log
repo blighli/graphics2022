@@ -1,0 +1,91 @@
+﻿  main.cpp
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(30,12): error C2065: “Texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(30,5): error C2923: "std::vector": "Texture" 不是参数 "_Ty" 的有效 模板 类型参数
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(30,12): message : 参见“Texture”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(30,5): error C2976: “std::vector'”: 模板 参数太少
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(31,12): error C2065: “Mesh”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(31,5): error C2923: "std::vector": "Mesh" 不是参数 "_Ty" 的有效 模板 类型参数
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(31,12): message : 参见“Mesh”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(31,5): error C2976: “std::vector'”: 模板 参数太少
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(87,10): error C3646: “processMesh”: 未知重写说明符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(87,21): error C2059: 语法错误:“(”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(88,5): error C2334: “{”的前面有意外标记；跳过明显的函数体
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(173,12): error C2065: “Texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(173,5): error C2923: "std::vector": "Texture" 不是参数 "_Ty" 的有效 模板 类型参数
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(173,12): message : 参见“Texture”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(173,5): error C2976: “std::vector'”: 模板 参数太少
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(37,5): error C2512: “std::vector”: 没有合适的默认构造函数可用
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(44,44): error C2662: “allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(44,38): message : 原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(44,38): message : 转换要求第二个用户定义的转换运算符或构造函数
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1930,39): message : 参见“std::vector<_Ty,_Alloc>::size”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(44,44): message : 尝试匹配参数列表“()”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(45,13): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1955,40): message : 可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1945,34): message : 或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(45,13): message : 尝试匹配参数列表“(std::vector, unsigned int)”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(77,30): error C3861: “processMesh”: 找不到标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,16): error C2065: “Texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,9): error C2923: "std::vector": "Texture" 不是参数 "_Ty" 的有效 模板 类型参数
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,16): message : 参见“Texture”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,9): error C2976: “std::vector'”: 模板 参数太少
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,25): error C2133: “textures”: 未知的大小
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(175,25): error C2512: “std::vector”: 没有合适的默认构造函数可用
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(494,1): message : 参见“std::vector”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(182,57): error C2662: “allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type std::vector<_Ty,_Alloc>::size(void) noexcept const”: 不能将“this”指针从“std::vector”转换为“const std::vector<_Ty,_Alloc> &”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(182,42): message : 原因如下: 无法从“std::vector”转换为“const std::vector<_Ty,_Alloc>”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(182,42): message : 转换要求第二个用户定义的转换运算符或构造函数
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1930,39): message : 参见“std::vector<_Ty,_Alloc>::size”的声明
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(182,57): message : 尝试匹配参数列表“()”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(184,33): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1955,40): message : 可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1945,34): message : 或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(184,33): message : 尝试匹配参数列表“(std::vector, unsigned int)”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,40): error C2678: 二进制“[”: 没有找到接受“std::vector”类型的左操作数的运算符(或没有可接受的转换)
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1955,40): message : 可能是“const _Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept const”
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(1945,34): message : 或    “_Ty &std::vector<_Ty,_Alloc>::operator [](const allocator_traits<allocator_traits<_Alloc>::rebind_alloc<_Ty>>::size_type) noexcept”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,40): message : 尝试匹配参数列表“(std::vector, unsigned int)”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,29): error C2663: “std::vector<_Ty,_Alloc>::push_back”: 没有重载函数具有对 “this” 指针的有效转换
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(939,23): message : 可能是“void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,29): message : “void std::vector<_Ty,_Alloc>::push_back(_Ty &&)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,21): message : 原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,21): message : 转换要求第二个用户定义的转换运算符或构造函数
+D:\VisualStudio\VC\Tools\MSVC\14.34.31933\include\vector(935,23): message : 或    “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,29): message : “void std::vector<_Ty,_Alloc>::push_back(const _Ty &)”: 不能将“this”指针从“std::vector”转换为“std::vector<_Ty,_Alloc> &”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,21): message : 原因如下: 无法从“std::vector”转换为“std::vector<_Ty,_Alloc>”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,21): message : 转换要求第二个用户定义的转换运算符或构造函数
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(186,29): message : 尝试匹配参数列表“()”时
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(193,17): error C2065: “Texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(193,25): error C2146: 语法错误: 缺少“;”(在标识符“texture”的前面)
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(193,25): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(194,17): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(195,17): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(196,17): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(197,36): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(198,43): error C2065: “texture”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(201,9): error C2440: “return”: 无法从“std::vector”转换为“std::vector”
+C:\Users\zkj\Desktop\c++\Project3\learnopengl\model.h(201,9): message : 由于复制构造函数不明确或没有可用的复制构造函数，因此无法复制构造 class“std::vector”
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(24,14): error C4430: 缺少类型说明符 - 假定为 int。注意: C++ 不支持默认 int
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(24,8): error C2146: 语法错误: 缺少“;”(在标识符“camera”的前面)
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(113,62): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(113,54): error C2672: “glm::radians”: 未找到匹配的重载函数
+C:\Users\zkj\Desktop\c++\Project1\glm\glm\detail\func_trigonometric.inl(12,43): message : 可能是“genType glm::radians(genType)”
+C:\Users\zkj\Desktop\c++\Project1\glm\glm\detail\func_trigonometric.hpp(32,44): message : 或    “vecType<T,P> glm::radians(const vecType<T,P> &)”
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(113,37): error C2672: “glm::perspective”: 未找到匹配的重载函数
+C:\Users\zkj\Desktop\c++\Project1\glm\glm\gtc\matrix_transform.hpp(232,37): message : 可能是“glm::tmat4x4<T,glm::packed_highp> glm::perspective(T,T,T,T)”
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(114,26): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(146,9): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(146,32): error C2065: “FORWARD”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(148,9): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(148,32): error C2065: “BACKWARD”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(150,9): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(150,32): error C2065: “LEFT”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(152,9): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(152,32): error C2065: “RIGHT”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(184,5): error C2065: “camera”: 未声明的标识符
+C:\Users\zkj\Desktop\c++\Project3\main.cpp(191,5): error C2065: “camera”: 未声明的标识符
