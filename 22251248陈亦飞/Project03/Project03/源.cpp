@@ -24,9 +24,11 @@ float s = 1.0f;
 const GLfloat PI = 3.14159265358979323846f;
 float lastX = 400.0f;
 float lastY = 300.0f;
+float rX = 400.0f;
+float rY = 300.0f;
 float deltaTime = 0.0f; // 当前帧与上一帧的时间差
 float lastFrame = 0.0f; // 上一帧的时间
-bool rotateflag = false;
+bool rotateflag = true;
 bool firstMouse = true;
 bool freeview = true;
 bool showview = false;
@@ -36,12 +38,18 @@ bool earthdir = false;
 float sundist = 0;
 bool sundir = false;
 float objradius = 0;
+bool firstlocal = true;
+bool changed = false;
+float modelyaw = 0;
+float modelpitch = 0;
 glm::vec3 rotateaxis = glm::vec3(0,0,1);
 glm::vec3 lightPos = glm::vec3(1, 5, 1);
 glm::vec3 lightColor = glm::vec3(0.5, 0.5, 0.5);
 glm::vec3 rotatevector = glm::vec3(0.0f, 0.0f, 1.0f);
 glm::vec3 scalevector = glm::vec3(1.0f, 1.0f, 1.0f);
 glm::vec3 transvector = glm::vec3(0.0f, 0.0f, 0.0f);
+glm::vec3 transvector_pre = glm::vec3(0.0f, 0.0f, 0.0f);
+glm::mat4 modellocation = glm::mat4(1.0f);
 Camera mycamera;
 sphere mysphere;
 
@@ -157,16 +165,27 @@ int main()
 		}
 		ourShader.setMat4("projection", projection);
 		ourShader.setMat4("view", view);
-		// render the loaded model
-		model = model * glm::translate(glm::mat4(1.0f), transvector);
-		transvector = glm::vec3(0.0);
-		model = glm::rotate(model,glm::radians(objradius) ,rotateaxis); // translate it down so it's at the center of the scene
-		objradius = 0;
-		model = glm::scale(model, glm::vec3(s));	// it's a bit too big for our scene, so scale it down
-		s = 1;
-		glm::mat3 normalMatrix = glm::transpose(glm::inverse(glm::mat3(model)));
+		if (firstlocal || changed)
+		{
+			modellocation = glm::mat4(1.0f);
+			modellocation = glm::translate(modellocation, transvector);
+			modellocation = glm::rotate(modellocation, glm::radians(modelyaw), glm::vec3(0,1,0));
 
-		ourShader.setMat4("model", model);
+			if (glm::dot(glm::vec3(sin(modelyaw / 180.0 * 3.14), 0, cos(modelyaw/180.0*3.14)), mycamera.Front) < 0)
+			{
+				modellocation = glm::rotate(modellocation, glm::radians(modelpitch), glm::vec3(-1, 0, 0));
+			}
+			else
+			{
+				modellocation = glm::rotate(modellocation, glm::radians(modelpitch), glm::vec3(1, 0, 0));
+			}
+
+			modellocation = glm::scale(modellocation, glm::vec3(s));
+			firstlocal = false;
+			changed = false;
+		}
+
+		ourShader.setMat4("model", modellocation);
 		ourModel.Draw(ourShader);
 		// glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
 		// -------------------------------------------------------------------------------
@@ -222,15 +241,15 @@ void mouse_presscallback(GLFWwindow* window, int button, int action, int mods)
 	}
 	else if (controlview)
 	{
-		if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
-		{
-			rotateflag = true;
-			std::cout << true<< std::endl;
-		}
-		else if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_RELEASE)
-		{
-			rotateflag = false;
-		}
+		//if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_PRESS)
+		//{
+		//	rotateflag = true;
+		//	std::cout << true<< std::endl;
+		//}
+		//else if (glfwGetMouseButton(window, GLFW_MOUSE_BUTTON_LEFT) == GLFW_RELEASE)
+		//{
+		//	rotateflag = false;
+		//}
 	}
 
 }
@@ -270,8 +289,10 @@ void processInput(GLFWwindow* window)
 		}
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector += cameraspeed * mycamera.U;
-				transvector -= cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.U));
+			transvector -= cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.U));
+			changed = true;
 		}
 
 	}
@@ -284,8 +305,10 @@ void processInput(GLFWwindow* window)
 		}
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector += cameraspeed * mycamera.U;
 			transvector += cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
+			changed = true;
 		}
 
 	}
@@ -298,8 +321,10 @@ void processInput(GLFWwindow* window)
 		}
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector -= cameraspeed * mycamera.U;
 			transvector -= cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
+			changed = true;
 		}
 
 	}
@@ -312,8 +337,10 @@ void processInput(GLFWwindow* window)
 		}
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector -= cameraspeed * mycamera.U;
 			transvector += cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
+			changed = true;
 		}
 	}
 	else if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
@@ -323,7 +350,9 @@ void processInput(GLFWwindow* window)
 			mycamera.Pos += cameraspeed * mycamera.Front;
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector += cameraspeed * mycamera.U;
+			changed = true;
 		}
 	}
 
@@ -334,7 +363,9 @@ void processInput(GLFWwindow* window)
 			mycamera.Pos -= cameraspeed * mycamera.Front;
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector -= cameraspeed * mycamera.U;
+			changed = true;
 		}
 	}
 
@@ -345,7 +376,9 @@ void processInput(GLFWwindow* window)
 			mycamera.Pos -= cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector -= cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
+			changed = true;
 		}
 	}
 
@@ -356,7 +389,9 @@ void processInput(GLFWwindow* window)
 			mycamera.Pos += cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
 		else if (controlview)
 		{
+			transvector_pre = transvector;
 			transvector += cameraspeed * glm::normalize(glm::cross(mycamera.Front, mycamera.Up));
+			changed = true;
 		}
 	}
 
@@ -454,20 +489,10 @@ void mouse_callback(GLFWwindow* window, double xpos, double ypos)
 			xoffset *= sensitivity;
 			yoffset *= sensitivity;
 
+			modelyaw += xoffset;
+			modelpitch += yoffset;
 			
-			rotateaxis = mycamera.U * xoffset + glm::cross(mycamera.U, mycamera.Front) * yoffset;
-			rotateaxis = glm::normalize(rotateaxis);
-			if (xoffset < 0)
-			{
-				objradius = sqrt(pow(xoffset, 2) + pow(yoffset, 2));
-			}
-			else
-			{
-				objradius = sqrt(pow(xoffset, 2) + pow(yoffset, 2));
-			}
-
-			
-			
+			changed = true;
 		}
 	}
 }
@@ -489,6 +514,7 @@ void scroll_callback(GLFWwindow* window, double xoffset, double yoffset)
 			s = 0.1f;
 		if (s > 10.0f)
 			s = 10.0f;
+		changed = true;
 	}
 
 }
