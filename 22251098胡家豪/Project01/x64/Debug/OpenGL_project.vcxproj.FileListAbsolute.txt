@@ -1,0 +1,4 @@
+D:\OpenGL_project\x64\Debug\OpenGL_project.exe
+D:\OpenGL_project\x64\Debug\OpenGL_project.pdb
+D:\Homework\Project1\x64\Debug\OpenGL_project.exe
+D:\Homework\Project1\x64\Debug\OpenGL_project.pdb
