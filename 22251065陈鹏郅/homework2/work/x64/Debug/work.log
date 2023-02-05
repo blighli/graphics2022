@@ -1,0 +1,15 @@
+﻿  main.cpp
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(25): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(25): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(67): warning C4838: 从“double”转换到“GLfloat”需要收缩转换
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(67): warning C4305: “初始化”: 从“double”到“GLfloat”截断
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(103): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(113): warning C4305: “参数”: 从“double”到“GLfloat”截断
+c:\users\public\documents\visual studio 2015\projects\work\work\main.cpp(115): warning C4305: “参数”: 从“double”到“GLfloat”截断
+  loadBMP.cpp
+c:\users\public\documents\visual studio 2015\projects\work\work\loadbmp.cpp(175): warning C4244: “初始化”: 从“double”转换到“GLfloat”，可能丢失数据
+c:\users\public\documents\visual studio 2015\projects\work\work\loadbmp.cpp(176): warning C4244: “参数”: 从“double”转换到“GLfloat”，可能丢失数据
+  MouseEvent.cpp
+  正在生成代码...
+  work.vcxproj -> C:\Users\Public\Documents\Visual Studio 2015\Projects\work\x64\Debug\work.exe
+  work.vcxproj -> C:\Users\Public\Documents\Visual Studio 2015\Projects\work\x64\Debug\work.pdb (Full PDB)

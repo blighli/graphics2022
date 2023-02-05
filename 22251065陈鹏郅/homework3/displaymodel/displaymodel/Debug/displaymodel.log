@@ -1,0 +1,31 @@
+﻿生成启动时间为 2014/4/1 22:35:20。
+项目“C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\displaymodel\displaymodel.vcxproj”在节点 2 上(build 个目标)。
+InitializeBuildStatus:
+  正在创建“Debug\displaymodel.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+ClCompile:
+  D:\Program Files\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt read_obj.cpp
+  read_obj.cpp
+c:\program files\microsoft sdks\windows\v7.0a\include\windef.h(126): warning C4005: “APIENTRY”: 宏重定义
+          d:\program files\vc\include\gl\gl.h(78) : 参见“APIENTRY”的前一个定义
+c:\users\lindsey\documents\visual studio 2010\projects\displaymodel\displaymodel\read_obj.cpp(22): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          d:\program files\vc\include\stdio.h(234) : 参见“fopen”的声明
+c:\users\lindsey\documents\visual studio 2010\projects\displaymodel\displaymodel\read_obj.cpp(31): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          d:\program files\vc\include\stdio.h(253) : 参见“fscanf”的声明
+c:\users\lindsey\documents\visual studio 2010\projects\displaymodel\displaymodel\read_obj.cpp(35): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          d:\program files\vc\include\stdio.h(253) : 参见“fscanf”的声明
+c:\users\lindsey\documents\visual studio 2010\projects\displaymodel\displaymodel\read_obj.cpp(39): warning C4996: 'fscanf': This function or variable may be unsafe. Consider using fscanf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+          d:\program files\vc\include\stdio.h(253) : 参见“fscanf”的声明
+Link:
+  D:\Program Files\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.exe" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\displaymodel.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.lib" /MACHINE:X86 Debug\read_obj.obj
+  LINK : 没有找到 C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.exe 或上一个增量链接没有生成它；正在执行完全链接
+  displaymodel.vcxproj -> C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.exe
+Manifest:
+  C:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\Debug\displaymodel.exe;#1" /manifest Debug\displaymodel.exe.intermediate.manifest
+FinalizeBuildStatus:
+  正在删除文件“Debug\displaymodel.unsuccessfulbuild”。
+  正在对“Debug\displaymodel.lastbuildstate”执行 Touch 任务。
+已完成生成项目“C:\Users\Lindsey\Documents\Visual Studio 2010\Projects\displaymodel\displaymodel\displaymodel.vcxproj”(build 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:06.43
