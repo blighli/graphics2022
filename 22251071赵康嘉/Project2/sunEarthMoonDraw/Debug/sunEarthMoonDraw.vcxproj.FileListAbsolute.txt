@@ -1,0 +1,2 @@
+E:\openGlExercise\sunEarthMoonDraw\Debug\sunEarthMoonDraw.exe
+C:\Users\zkj\Desktop\c++\Project2\sunEarthMoonDraw\Debug\sunEarthMoonDraw.exe
